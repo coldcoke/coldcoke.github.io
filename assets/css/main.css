@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Spectral:400,700");
+section {
+  clear: both; }
+
+header nav a, header .kicker, footer .lockup .content-wrap nav a {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  color: #BD5248; }
+
+header nav a, header .kicker, footer .lockup .content-wrap nav a {
+  text-transform: uppercase; }
+
+section h3, form label {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  color: #BD5248; }
+
+section h3 {
+  text-transform: uppercase; }
+
+form label {
+  color: black; }
+
+section .skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(n+2), section .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(n+3), section .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(n+4), section .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(n+5), section .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(n+6), section .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(n+7), section .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(n+8), section .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(n+9), section .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(n+10), section .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(n+11) {
+  background-color: #B9B9B9; }
+
+header {
+  background: url("/assets/img/computer-circuit-board.jpeg") center center;
+  background-size: cover;
+  height: 450px;
+  font-family: "Open Sans"; }
+  header .logo {
+    float: left;
+    margin: 30px 30px; }
+  header nav {
+    float: right;
+    margin: 30px 30px 0 0; }
+    header nav a {
+      display: inline-block;
+      margin-left: 20px; }
+      header nav a:hover {
+        color: black; }
+  header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    clear: both;
+    padding-top: 100px; }
+    header h1 span {
+      display: inline-block;
+      border: solid white 10px; }
+  header .kicker {
+    text-align: center;
+    color: white; }
+
+@media (max-width: 800px) {
+  header {
+    height: 225px; }
+    header .logo, header nav {
+      float: left;
+      margin: auto; }
+    header nav {
+      padding-top: 20px; }
+    header h1 {
+      margin: auto;
+      padding-top: 40px; }
+      header h1 span {
+        border: solid white 6px; } }
+footer {
+  clear: both;
+  background: url("/assets/img/computer-circuit-board.jpeg") center center;
+  background-size: cover;
+  font-family: "Open Sans"; }
+  footer .lockup {
+    display: inline-block;
+    width: 98%; }
+    footer .lockup .logo {
+      float: left;
+      margin: 30px 30px; }
+    footer .lockup .content-wrap {
+      display: block;
+      float: left;
+      margin: 30px auto auto 30px; }
+      footer .lockup .content-wrap nav a {
+        margin-left: 15px; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4); }
+    footer .lockup .profiles {
+      display: block;
+      float: right;
+      margin: 30px 30px auto auto; }
+
+section h3 {
+  text-align: center; }
+section .face-lockup {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex; }
+  section .face-lockup .icon {
+    margin: auto; }
+  section .face-lockup .face-img {
+    order: 4; }
+    section .face-lockup .face-img img {
+      border-radius: 50%;
+      margin: auto; }
+  section .face-lockup #fedora {
+    order: 1; }
+  section .face-lockup #windows {
+    order: 2; }
+  section .face-lockup #code {
+    order: 3; }
+  section .face-lockup #mouse {
+    order: 5; }
+  section .face-lockup #tools {
+    order: 6; }
+  section .face-lockup #elec {
+    order: 7; }
+section .blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Spectral"; }
+section .skill-lockup {
+  width: 700px;
+  margin: 50px auto;
+  color: #999; }
+  section .skill-lockup .skill-unit {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 30px; }
+    section .skill-lockup .skill-unit .skill-label {
+      font-family: "Open Sans";
+      font-size: 20px; }
+    section .skill-lockup .skill-unit .skill-icons {
+      font-size: 0; }
+      section .skill-lockup .skill-unit .skill-icons span {
+        display: inline-block;
+        padding: 4px;
+        background-color: #BD5248;
+        margin: 1px;
+        border-radius: 50%; }
+        section .skill-lockup .skill-unit .skill-icons span:after {
+          content: "";
+          display: block;
+          background: #FFF;
+          padding: 3px;
+          border-radius: 50%;
+          padding: 4px; }
+@media screen and (max-width: 700px) {
+  section .face-lockup {
+    display: block;
+    text-align: center;
+    margin: auto; }
+    section .face-lockup .face-img {
+      width: auto;
+      margin-bottom: 30px; }
+    section .face-lockup .icon {
+      display: inline-block;
+      padding: 20px; }
+  section .skill-lockup .skill-unit {
+    float: none;
+    display: block;
+    padding: 10px 10px; } }
+
+form {
+  max-width: 500px;
+  margin: 0 auto 50px; }
+  form label {
+    display: block;
+    margin-bottom: 20px; }
+    form label span {
+      display: block; }
+  form textarea {
+    height: 10em; }
+  form [type="submit"] {
+    background: #BD5248;
+    color: white;
+    width: 33%;
+    text-transform: uppercase; }
+    form [type="submit"]:hover {
+      background: #DF746A; }
+  form .submit-wrap {
+    text-align: right; }
+  form .contact-info label {
+    width: 50%;
+    float: left;
+    box-sizing: border-box; }
+    form .contact-info label:nth-child(1) {
+      padding-right: 10px; }
+    form .contact-info label:nth-child(2) {
+      padding-left: 10px; }
+  form input, form textarea {
+    box-sizing: border-box;
+    border: 3px solid #BD5248;
+    width: 100%;
+    padding: 10px; }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #DF746A; }
+  @media (max-width: 700px) {
+    form .contact-info label {
+      float: none;
+      display: block;
+      margin: 15px auto;
+      padding: 10px 10px;
+      width: 100%; } }

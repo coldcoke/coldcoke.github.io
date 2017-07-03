@@ -1,0 +1,89 @@
+section
+  h3
+    @extend %big-bold-upper
+    text-align: center
+  .face-lockup
+    max-width: 700px
+    margin: 0 auto
+    display: flex
+    .icon
+      margin: auto
+    .face-img
+      order: 4
+      img
+        border-radius: 50%
+        margin: auto
+
+    #fedora
+      order: 1
+    #windows
+      order: 2
+    #code
+      order: 3
+    #mouse
+      order: 5
+    #tools
+      order: 6
+    #elec
+      order: 7
+
+  .blurb
+    strong
+      color: $light-accent
+    max-width: 620px
+    padding: 0 15px
+    margin: 50px auto
+    font:
+      size: 24px
+      weight: 400
+      family: 'Spectral'
+
+  .skill-lockup
+    width: 700px
+    margin: 50px auto
+    color: #999
+    .skill-unit
+      width: 40%
+      float: left
+      margin-left: 10%
+      margin-bottom: 30px
+      .skill-label
+        font:
+          family: 'Open Sans'
+          size: 20px
+      .skill-icons
+        font-size: 0
+        span
+          display: inline-block
+          padding: 4px
+          background-color: $accent-color
+          margin: 1px
+          border-radius: 50%
+          &:after
+            content: ''
+            display: block
+            background: #FFF
+            padding: 3px
+            border-radius: 50%
+            padding: 4px
+        @for $i from 1 through 10
+          &.skill-#{$i} span:nth-child(n+#{$i+1})
+            @extend %skill-color
+
+  @media screen and (max-width: 700px)
+    .face-lockup
+      display: block
+      text-align: center
+      margin: auto
+      .face-img
+        width: auto
+        margin-bottom: 30px
+      .icon
+        display: inline-block
+        padding: 20px
+
+    .skill-lockup
+      .skill-unit
+        float: none
+        display: block
+        padding: 10px 10px

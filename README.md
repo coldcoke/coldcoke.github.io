@@ -2,7 +2,10 @@ This is a simple portfolio page built on jekyll using
 Sass and jQuery
 
 The site structure was cloned from:
+<a href="https://github.com/DevTips/DevTips-Starter-Kit" target="_blank">
 DevTips-Starter-Kit (Jekyll Friendly)
+alt="Link to DevTips Starter Kit" />
+</a>
 
 What has been changed?
 ========================
